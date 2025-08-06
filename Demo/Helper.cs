@@ -3,6 +3,36 @@
     // Generic Class
     internal static class Helper/*<T>*/
     {
+        //Generic Linear Search Method
+        public static int LinearSearch<T>(T[] Arr, T Value)
+        {
+            if (Arr?.Length > 0)
+            {
+                for (int i = 0; i < Arr.Length; i++)
+                {
+                    if (Arr[i].Equals(Value)) return i;
+                }
+            }
+            return -1;
+        }
+
+        #region Non Generic Linear Search Method
+        //public static int LinearSearch(int[] Arr, int Value)
+        //{
+        //    if (Arr?.Length > 0)
+        //    {
+        //        for (int i = 0; i < Arr.Length; i++)
+        //        {
+        //            if (Arr[i] == Value) return i;
+        //        }
+        //    }
+        //    return -1;
+        //} 
+        #endregion
+
+
+
+        #region Generic SWAP Method & Method
         // Generic SWAP Method
         public static void SWAP<T>(ref T X, ref T Y)
         {
@@ -15,6 +45,7 @@
         {
             Console.WriteLine(data);
         }
+        #endregion
 
         #region Non Generic SWAP
         //public static void SWAP(ref int X, ref int Y)

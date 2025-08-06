@@ -91,6 +91,7 @@
             //Console.WriteLine($"P02: {P02}"); 
             #endregion
 
+            #region Generic Ex02 : Linear Search
             // Linear Search
 
             // 4 7 8 9 10 1 2 3 5 12 -1 - 13 11
@@ -118,8 +119,33 @@
             //Console.WriteLine($"Index : {Index}");
 
             //if (E01.Equals(E02))
-            //    Console.WriteLine("E01 == E02");
+            //    Console.WriteLine("E01 == E02"); 
+            #endregion
 
+            #region Equality in Class or Struct
+            // Equality in Class or Struct
+            // Equals
+            // 'Class'  Has Equals Function Which Inherited From Object Class --> Compare Reference ==
+            // 'Struct' Has Equals Function Which Inherited From Object Class --> Compare Data
+            // Note: Struct Don't Have Implementation For The (==) Operator
+
+            //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Salary = 12000, Age = 31 };
+            //Employee E02 = new Employee() { Id = 1, Name = "Ahmed", Salary = 12000, Age = 31 };
+            //Employee E02 = new Employee() {Id =2, Name ="Ali", Salary = 11000, Age = 34 };
+
+            //Console.WriteLine($"E01: {E01.GetHashCode()}");
+            //Console.WriteLine($"E02: {E02.GetHashCode()}");
+
+            //if (E01.Equals(E02))
+            //    Console.WriteLine("E01 == E02!");
+            //else
+            //    Console.WriteLine("E01 != E02!");
+
+            //if (E01 == E02)
+            //    Console.WriteLine("E01 == E02!");
+            //else
+            //    Console.WriteLine("E01 != E02!"); 
+            #endregion
 
 
         }

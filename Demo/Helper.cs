@@ -3,6 +3,7 @@
     // Generic Class
     internal static class Helper/*<T>*/
     {
+        #region Generic Linear Search Method
         //Generic Linear Search Method
         public static int LinearSearch<T>(T[] Arr, T Value)
         {
@@ -15,6 +16,7 @@
             }
             return -1;
         }
+        #endregion
 
         #region Non Generic Linear Search Method
         //public static int LinearSearch(int[] Arr, int Value)
@@ -29,7 +31,6 @@
         //    return -1;
         //} 
         #endregion
-
 
 
         #region Generic SWAP Method & Method

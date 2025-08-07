@@ -147,6 +147,7 @@
             //    Console.WriteLine("E01 != E02!"); 
             #endregion
 
+            #region Generic Ex03 : Bubble Sort
             // 2,3,9,8,7,6,5,4,1,12, -1,0
 
             // Sorting : Bubble Sort
@@ -198,7 +199,16 @@
 
             //Helper.PrintArray(employees);
 
-            ////Array.Sort(employees);
+            ////Array.Sort(employees); 
+            #endregion
+
+            Point P01 = new Point(1, 1);
+            Point P02 = new Point(2, 2);
+
+            if (P01.CompareTo(null) > 0)
+                Console.WriteLine("P01 is Greater Than P02");
+            else
+                Console.WriteLine("P01 is Less Than P02");
         }
     }
 }

@@ -264,6 +264,7 @@
             // Built-in Generic Interface IEquatable 
             #endregion
 
+            #region Built-in Interface Generic IEqualityComparer
             //Built-in Interface Generic IEqualityComparer
             //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Salary = 12000, Age = 31 };
             //Employee E02 = new Employee() { Id = 2, Name = "Ali", Salary = 11000, Age = 34 };
@@ -275,7 +276,29 @@
             //int Index = Helper.LinearSearch(employees, new Employee() { Id = 2, Name = "Ali", Salary = 12000, Age = 34 });
             //int Index = Helper.LinearSearch(employees, new Employee() { Name = "Ali" }, new EmployeeEqualityComparerName());
 
-            //Console.WriteLine($"Index: {Index}");
+            //Console.WriteLine($"Index: {Index}"); 
+            #endregion
+
+            #region IComparer with BubbleSort
+            //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Salary = 12000, Age = 31 };
+            //Employee E02 = new Employee() { Id = 2, Name = "Ali", Salary = 11000, Age = 34 };
+            //Employee E03 = new Employee() { Id = 3, Name = "Omar", Salary = 13000, Age = 32 };
+            //Employee E04 = new Employee() { Id = 4, Name = "Mona", Salary = 19000, Age = 29 };
+
+            //Employee[] employees = { E01, E03, E02, E04 };
+
+            //Helper.PrintArray(employees);
+
+            ////Helper.BubbleSort(employees); // Sorting Based On Age
+            ////Helper.BubbleSort(employees, new EmployeeComparerSalary()); // Sorting Based On Salary
+            //Helper.BubbleSort(employees, comparer: new EmployeeComparerNameLength()); // Sorting Based On Named Length
+
+            //Console.WriteLine();
+
+            //Helper.PrintArray(employees);
+
+            //Array.Sort(); 
+            #endregion
         }
     }
 }

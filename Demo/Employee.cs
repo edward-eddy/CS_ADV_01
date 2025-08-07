@@ -15,6 +15,23 @@ namespace Demo
             return HashCode.Combine(obj.Name);
         }
     }
+
+    class EmployeeComparerSalary : IComparer<Employee>
+    {
+        public int Compare(Employee? x, Employee? y)
+        {
+            return x.Salary.CompareTo(y.Salary);
+        }
+    }
+
+    class EmployeeComparerNameLength : IComparer<Employee>
+    {
+        public int Compare(Employee? x, Employee? y)
+        {
+            return x.Name.Length.CompareTo(y.Name.Length);
+        }
+    }
+
     internal class Employee : IComparable<Employee>, IEquatable<Employee>
     {
         public int Id { get; set; }

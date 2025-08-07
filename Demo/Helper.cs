@@ -18,6 +18,21 @@
             }
         }
 
+        public static void BubbleSort<T>(T[] Arr, IComparer<T> comparer) where T : IComparable<T>
+        {
+            if (Arr?.Length > 0)
+            {
+                for (int i = 0; i < Arr.Length; i++)
+                {
+                    for (int j = 0; j < Arr.Length - i - 1; j++)
+                    {
+                        if (comparer.Compare(Arr[j], Arr[j + 1]) > 0)
+                            SWAP(ref Arr[j], ref Arr[j + 1]);
+                    }
+                }
+            }
+        }
+
         #region Non Generic Bubble Sort
         //public static void BubbleSort(int[] Arr)
         //{

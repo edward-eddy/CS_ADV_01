@@ -48,6 +48,18 @@
             }
             return -1;
         }
+
+        public static int LinearSearch<T>(T[] Arr, T Value, IEqualityComparer<T> equalityComparer)
+        {
+            if (Arr?.Length > 0)
+            {
+                for (int i = 0; i < Arr.Length; i++)
+                {
+                    if (equalityComparer.Equals(Arr[i], Value)) return i;
+                }
+            }
+            return -1;
+        }
         #endregion
 
         #region Non Generic Linear Search Method

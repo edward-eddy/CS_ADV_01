@@ -242,11 +242,12 @@
             //Helper.PrintArray(employees); 
             #endregion
 
-            Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Salary = 12000, Age = 31 };
-            Employee E02 = new Employee() { Id = 1, Name = "Ahmed", Salary = 12000, Age = 31 };
-            //Employee E02 = new Employee() { Id =2, Name = "Ali", Salary = 11000, Age = 34 } ;
-            Employee E03 = new Employee() { Id = 3, Name = "Omar", Salary = 13000, Age = 32 };
-            Employee E04 = new Employee() { Id = 4, Name = "Mona", Salary = 19000, Age = 29 };
+            #region Built-in Generic Interface IEquatable 
+            //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Salary = 12000, Age = 31 };
+            //Employee E02 = new Employee() { Id = 1, Name = "Ahmed", Salary = 12000, Age = 31 };
+            ////Employee E02 = new Employee() { Id =2, Name = "Ali", Salary = 11000, Age = 34 } ;
+            //Employee E03 = new Employee() { Id = 3, Name = "Omar", Salary = 13000, Age = 32 };
+            //Employee E04 = new Employee() { Id = 4, Name = "Mona", Salary = 19000, Age = 29 };
 
 
             //Employee [] employees = { E01, E03, E02, E04 };
@@ -255,12 +256,26 @@
 
             //Console.WriteLine($"Index: {Index}");
 
-            if (E01.Equals(E02))
-                Console.WriteLine("E01 == E02");
-            else
-                Console.WriteLine("E01 != E02");
+            //if (E01.Equals(E02))
+            //    Console.WriteLine("E01 == E02");
+            //else
+            //    Console.WriteLine("E01 != E02");
 
-            // Built-in Generic Interface IEquatable
+            // Built-in Generic Interface IEquatable 
+            #endregion
+
+            //Built-in Interface Generic IEqualityComparer
+            //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Salary = 12000, Age = 31 };
+            //Employee E02 = new Employee() { Id = 2, Name = "Ali", Salary = 11000, Age = 34 };
+            //Employee E03 = new Employee() { Id = 3, Name = "Omar", Salary = 13000, Age = 32 };
+            //Employee E04 = new Employee() { Id = 4, Name = "Mona", Salary = 19000, Age = 29 };
+
+            //Employee[] employees = { E01, E03, E02, E04 };
+
+            //int Index = Helper.LinearSearch(employees, new Employee() { Id = 2, Name = "Ali", Salary = 12000, Age = 34 });
+            //int Index = Helper.LinearSearch(employees, new Employee() { Name = "Ali" }, new EmployeeEqualityComparerName());
+
+            //Console.WriteLine($"Index: {Index}");
         }
     }
 }

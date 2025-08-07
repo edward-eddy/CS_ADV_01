@@ -212,6 +212,7 @@
             //    Console.WriteLine("P01 is Less Than P02"); 
             #endregion
 
+            #region Non Generic IComparable Vs Generic IComparable
             //Point[] points =
             //new Point(6, 6),
             //new Point(2, 2),
@@ -225,20 +226,41 @@
             //Helper.BubbleSort(points);
             //Helper.PrintArray(points);
 
+            //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Salary = 12000, Age = 31 };
+            //Employee E02 = new Employee() { Id = 2, Name = "Ali", Salary = 11000, Age = 34 };
+            //Employee E03 = new Employee() { Id = 3, Name = "Omar", Salary = 13000, Age = 32 };
+            //Employee E04 = new Employee() { Id = 4, Name = "Mona", Salary = 19000, Age = 29 };
+
+            //Employee[] employees = { E01, E03, E02, E04 };
+
+            //Helper.PrintArray(employees);
+
+            //Helper.BubbleSort(employees);
+
+            //Console.WriteLine();
+
+            //Helper.PrintArray(employees); 
+            #endregion
+
             Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Salary = 12000, Age = 31 };
-            Employee E02 = new Employee() { Id = 2, Name = "Ali", Salary = 11000, Age = 34 };
+            Employee E02 = new Employee() { Id = 1, Name = "Ahmed", Salary = 12000, Age = 31 };
+            //Employee E02 = new Employee() { Id =2, Name = "Ali", Salary = 11000, Age = 34 } ;
             Employee E03 = new Employee() { Id = 3, Name = "Omar", Salary = 13000, Age = 32 };
             Employee E04 = new Employee() { Id = 4, Name = "Mona", Salary = 19000, Age = 29 };
 
-            Employee[] employees = { E01, E03, E02, E04 };
 
-            Helper.PrintArray(employees);
+            //Employee [] employees = { E01, E03, E02, E04 };
 
-            Helper.BubbleSort(employees);
+            //int Index = Helper.LinearSearch(employees, E03);
 
-            Console.WriteLine();
+            //Console.WriteLine($"Index: {Index}");
 
-            Helper.PrintArray(employees);
+            if (E01.Equals(E02))
+                Console.WriteLine("E01 == E02");
+            else
+                Console.WriteLine("E01 != E02");
+
+            // Built-in Generic Interface IEquatable
         }
     }
 }

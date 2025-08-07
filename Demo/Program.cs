@@ -147,7 +147,58 @@
             //    Console.WriteLine("E01 != E02!"); 
             #endregion
 
+            // 2,3,9,8,7,6,5,4,1,12, -1,0
 
+            // Sorting : Bubble Sort
+
+            //int[] Numbers = { 2, 3, 9, 8, 7, 6, 5, 4, 1, 12, -1, 0 };
+
+            //Helper.PrintArray(Numbers);
+            //Console.WriteLine();
+
+            //Helper.BubbleSort(Numbers); // Sorting Ascending
+
+            //Console.WriteLine();
+
+            //Helper.PrintArray(Numbers);
+
+
+            //Point[] points =
+            //{
+            //    new Point(6,  6),
+            //    new Point(2,  2),
+            //    new Point(4,  4),
+            //    new Point(3,  3),
+            //    new Point(1,  1),
+            //    new Point(5,  5),
+            //};
+
+            //Helper.BubbleSort(points);
+
+            //Helper.PrintArray(points);
+
+            // ICompareable : CompareTo
+            // int
+            // + : Caller > Parameter
+            // - : Caller < Parameter
+            // 0 : Caller = Parameter
+
+            //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Salary = 12000, Age = 31 };
+            //Employee E02 = new Employee() { Id = 2, Name = "Ali", Salary = 11000, Age = 34 };
+            //Employee E03 = new Employee() { Id = 3, Name = "Omar", Salary = 13000, Age = 32 };
+            //Employee E04 = new Employee() { Id = 4, Name = "Mona", Salary = 19000, Age = 29 };
+
+            //Employee[] employees = { E01, E02, E03, E04 };
+
+            //Helper.PrintArray(employees);
+
+            //Helper.BubbleSort(employees);
+
+            //Console.WriteLine();
+
+            //Helper.PrintArray(employees);
+
+            ////Array.Sort(employees);
         }
     }
 }

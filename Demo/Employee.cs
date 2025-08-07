@@ -1,6 +1,6 @@
 ﻿namespace Demo
 {
-    internal class Employee
+    internal class Employee : IComparable
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -30,5 +30,10 @@
             return $"Id : {Id}, Name : {Name}, Age : {Age}, Salary : {Salary}";
         }
 
+        public int CompareTo(object? obj)
+        {
+            Employee E = (Employee)obj;
+            return Age.CompareTo(E.Age);
+        }
     }
 }

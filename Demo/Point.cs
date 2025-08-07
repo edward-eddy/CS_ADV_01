@@ -1,6 +1,6 @@
 ﻿namespace Demo
 {
-    internal struct Point
+    internal struct Point : IComparable
     {
         public int X { get; set; }
         public int Y { get; set; }
@@ -13,7 +13,14 @@
 
         public override string ToString()
         {
-            return $"X : {X}, Y : {Y}";
+            return $"({X}, {Y})";
+        }
+
+        public int CompareTo(object? obj)
+        {
+            Point point = (Point)obj;
+            if (X == point.X) return Y.CompareTo(point.Y);
+            return X.CompareTo(point.X);
         }
     }
 }

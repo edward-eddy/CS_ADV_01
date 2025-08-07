@@ -3,7 +3,7 @@
     // Generic Class
     internal static class Helper/*<T>*/
     {
-        public static void BubbleSort<T>(T[] Arr) where T : IComparable
+        public static void BubbleSort<T>(T[] Arr) where T : IComparable<T>
         {
             if (Arr?.Length > 0)
             {

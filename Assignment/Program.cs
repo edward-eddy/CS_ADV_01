@@ -59,6 +59,28 @@
             //} 
             #endregion
 
+            #region Q03.
+            /*
+             3. You are given a list of integers. Your task is to find and return a new list containing only 
+            the even numbers from the given list.
+             */
+
+            //int[] list = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            //int[] even = Helpers.GetEven(list);
+
+            //foreach (int i in list)
+            //{
+            //    Console.Write($"{i} ");
+            //}
+            //Console.WriteLine("\n");
+
+            //foreach (int i in even)
+            //{
+            //    Console.Write($"{i} ");
+            //}
+            #endregion
+
         }
     }
 }

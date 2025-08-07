@@ -29,6 +29,36 @@
             //Console.WriteLine($"Length : {stringRange.GetLength()}"); 
             #endregion
 
+            #region Q02.
+            /*
+                2. You are given an ArrayList containing a sequence of elements. try to reverse the order of elements 
+            in the ArrayList in-place(in the same arrayList) without using the built-in Reverse. Implement 
+            a function that takes the ArrayList as input and modifies it to have the reversed order of elements.
+            */
+
+            //Employee[] employees =
+            //{
+            //    new Employee() {Id = 1, Name = "Ahmed"},
+            //    new Employee() {Id = 2, Name = "Ali"},
+            //    new Employee() {Id = 3, Name = "Yassmin"},
+            //    new Employee() {Id = 4, Name = "Edward"},
+            //    new Employee() {Id = 5, Name = "Alaa"}
+            //};
+
+            //foreach (Employee employee in employees)
+            //{
+            //    Console.WriteLine(employee);
+            //}
+
+            //Helpers.Reverse(employees);
+            //Console.WriteLine("\n After Reverse \n");
+
+            //foreach (Employee employee in employees)
+            //{
+            //    Console.WriteLine(employee);
+            //} 
+            #endregion
+
         }
     }
 }

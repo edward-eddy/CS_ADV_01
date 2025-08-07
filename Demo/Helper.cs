@@ -1,8 +1,25 @@
-﻿namespace Demo
+﻿using System.Collections;
+
+namespace Demo
 {
     // Generic Class
-    internal static class Helper/*<T>*/
+    internal static class Helper<T01> where T01 : class, IComparable, ICloneable, IComparer, new()
     {
+        // Generic Constraints:
+        // 1. Primary Constraints [0 : 1]
+        // 1.1. class
+        // 1.1. struct
+        // 1.1. special type point
+        // 1.1. enum
+        // 1.1. notnull
+
+        // 2. Secondary Constraints [0: M]
+        // T Implement Interface
+
+        // 3. Constructor Constraints
+        // new()
+
+        // T : Must Be Type Which Implement The IComparable Interface
         public static void BubbleSort<T>(T[] Arr) where T : IComparable<T>
         {
             if (Arr?.Length > 0)
